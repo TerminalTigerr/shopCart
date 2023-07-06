@@ -111,8 +111,9 @@ img {
 }
 
 .header {
-	width: 100%;
 	position: fixed;
+	width: 100%;
+	top: 0;
 	left: 0;
 	z-index: var(--z-fixed);
 	background-color: var(--first-color);
@@ -164,8 +165,8 @@ img {
 	margin-right: 10px;
 }
 
-#language-dropdown,
-#location-dropdown {
+.language_dropdown,
+.location_dropdown {
 	background-color: var(--first-color);
 	color: var(--text-color-light);
 	border: none;
@@ -174,5 +175,78 @@ img {
 
 .loc {
 	margin-left: 10px;
+}
+
+.nav {
+	background-color: var(--body-color);
+	height: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	column-gap: 2rem;
+	padding: 1rem 2rem;
+}
+
+.nav_logo {
+	color: var(--first-color);
+	
+}
+
+.logo {
+	font-size: 1.4rem;
+}
+
+.shopCart {
+	font-size: var(--h3-font-size);
+	font-weight: var(--font-medium);
+}
+
+.nav_menu {
+	
+}
+
+.nav_list {
+	display: flex;
+	flex-direction: row;
+	column-gap: 2rem;
+}
+
+.nav_link {
+	color: var(--text-color);
+	font-weight: 300;
+	transition: color .4s;
+}
+
+.nav_link:hover{
+	color: var(--text-color-alt);
+}
+
+.icon {
+	font-size: 1.2rem;
+}
+
+.search {
+	position: relative;
+	max-width: 300px;
+	align-items: center;
+}
+
+.search-input {
+	background-color: #d8d1d1;
+	padding: 7px 25px 7px 7px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.search_button {
+	position: absolute;
+	top: 6px;
+  right: 0;
+  height: 100%;
+  width: 30px;
+  background-color: #cac2c2;
+  border: none;
+  cursor: pointer;
 }
 
