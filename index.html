@@ -11,79 +11,62 @@
 		<title>Document</title>
 	</head>
 	<body>
+		<!--================= Header ===============-->
 		<header class="header" id="header">
-			<div class="header_alt container" id="header-alt">
-				<span class="tel"><i class="uil uil-phone tel_icon"></i>+233208951839</span>
-				<div class="promotion" id="promotion">
-					<p class="promo_content">Get 50% off on selected items</p><span class="line"></span>
-					<p class="shop">Shop Now</p>
-				</div>
-				<div class="lang_loc">
-					<div class="lang">
-						<select name="language" id="language-dropdown" class="language_dropdown">
-							<option value="en">Eng</option>
-							<option value="fr">Fr</option>
-							<option value="es">Es</option>
-						</select>
-					</div>
-					<div class="loc">
-						<select name="location" id="location-dropdown" class="location_dropdown">
-							<option value="NY">Location</option>
-							<option value="london">London</option>
-							<option value="Berlin">Berlin</option>
-							<option value="Dubai">Dubai</option>
-							<option value="NY">New York</option>
-						</select>
-					</div>
-				</div>
-			</div>
-
-			<nav class="nav ">
+			<nav class="nav container">
 				<a href="#" class="nav_logo">
-					<i class="uil uil-shopping-cart-alt logo"></i><span class="shopCart">
-						ShopCart
-					</span>
+					<i class="uil uil-shopping-cart logo_icon"></i><span class="shop">ShopCart</span>
 				</a>
-	
 				<div class="nav_menu" id="nav-menu">
 					<ul class="nav_list">
 						<li class="list_item">
-							<a href="#categories" class="nav_link">Categories</a>
-							<i class="uil uil-angle-down icon"></i>
+							<a href="#cateogories" class="nav_link">
+								Categories
+							</a>
 						</li>
 						<li class="list_item">
-							<a href="#deals" class="nav_link">Deals</a>
+							<a href="#deals" class="nav_link">
+								Deals
+							</a>
 						</li>
 						<li class="list_item">
-							<a href="#new" class="nav_link">What's New</a>
+							<a href="#new" class="nav_link">
+								What's New
+							</a>
 						</li>
 						<li class="list_item">
-							<a href="#delivery" class="nav_link">Delivery</a>
+							<a href="#delivery" class="nav_link">
+								Delivery
+							</a>
 						</li>
 					</ul>
+
+					<!--========== nav close ======-->
+					<div class="nav_close" id="nav-close">
+						<i class="uil uil-times"></i>
+					</div>
 				</div>
 
 				<div class="search-widget">
-					<input type="search" class="search-input" placeholder="search product">
+					<input type="text" class="search-input" placeholder="Search Product">
 					<button class="search-button">
-						<i class="uil uil-search search-icon"></i>
+						<i class="uil uil-search"></i>
 					</button>
 				</div>
 
 				<div class="account_cart">
-					<div class="account">
-						<a href="#account" class="account">
-							<i class="uil uil-user user_icon">
-							</i><span>Account</span>
-						</a>
-					</div>
-	
-					<div class="cart">
-						<a href="#cart" class="cart">
-							<i class="uil uil-shopping-cart cart_icon"></i>
-							<span>Cart</span>
-						</a>
-					</div>
+					<a href="#account" class="account_link">
+						<i class="uil uil-user user_icon"></i> Account
+					</a>
+
+					<a href="#cart" class="cart_link">
+						<i class="uil uil-shopping-cart-alt"></i>Cart
+					</a>
+				</div>
+
+				<!--=========== Toggle button======-->
+				<div class="nav_toggle" id="nav-toggle">
+					<i class="uil uil-bars"></i>
 				</div>
 			</nav>
 		</header>
