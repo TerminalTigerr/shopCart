@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
+
+/*=========== VARIABLE CSS =========*/
+:root {
+	--hearder--height: 2rem;
+
+	/*==== COLORS ====*/
+	--body-color: #fff;
+	--container-color: #fff;
+	--container-color-alt: #dcd9d9;
+	--title-color: #040404;
+	--text-color: #666060;
+	--text-color-alt: #1e1d1d;
+	--text-color-light: #fff;
+	--first-color: #0f2813f8;
+	--first-color-second: #eef1bf;
+
+	/*===== Font & Typography ======*/
+	/*== .5rem = 8px, 1rem = 16px ==*/
+
+	--body-font: 'Poppins', sans-serif;
+	--big-font-size: 2rem;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25;
+	--h3-font-size: 1.125rem;
+	--normal-font-size: 0.938rem;
+	--small-font-size: 0.813rem;
+	--smaller-font-size: 0.75rem;
+
+	/*========== Font Weight =======*/
+	--font-medium: 500;
+	--font-semi-bold: 600;
+
+	/*========== MARGENES BOTTOM =======*/
+	--mb-0-25: 0.25rem;
+	--mb-0-5: 0.5rem;
+	--mb-0-75: 0.75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+
+	/*========== Z INDEX ==============*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 100;
+}
+
+/*============ FONT SIZE FOR LARGE DEVICES ============*/
+@media screen and (min-width: 968px) {
+	:root {
+		--big-font-size: 3rem;
+		--h1-font-size: 2.25rem;
+		--h2-font-size: 1.5rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: 0.875rem;
+		--smaller-font-size: 0.813rem;
+					
+	}
+	
+}
+
+/*======== Base CSS ==========*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0 0 3rem;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	background-color: var(--body-color);
+	color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+	color: var(--title-color);
+	font-weight: var(--font-semi-bold);
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+/********** LAYOUT ******/
+.container {
+	max-width: 1120px;
+	margin-inline: 1.5rem;
+}
+
+.grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: var(--first-color);
+}
+
+.header_alt {
+	height: var(--hearder--height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tel {
+	display: flex;
+	left: 1rem;
+	color: var(--text-color-light);
+	font-weight: 100;
+}
+
+.promotion {
+	display: flex;
+	justify-content: center;
+}
+
+.promo_content {
+	margin-right: 10px;
+	color: var(--text-color-light);
+	font-weight: 100;
+}
+
+.line {
+	width: 2px;
+	height: 1.2rem;
+	background-color: var(--text-color-light);
+}
+
+.shop {
+	margin-left: 10px;
+	color: var(--text-color-light);
+	font-weight: 100;
+}
+
+.lang_loc {
+	display: flex;
+	align-items: center;
+}
+
+.lang {
+	margin-right: 10px;
+}
+
+#language-dropdown,
+#location-dropdown {
+	background-color: var(--first-color);
+	color: var(--text-color-light);
+	border: none;
+	font-weight: 100;
+}
+
+.loc {
+	margin-left: 10px;
+}
+
