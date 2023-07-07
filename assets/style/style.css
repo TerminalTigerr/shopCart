@@ -12,8 +12,8 @@
 	--text-color: #666060;
 	--text-color-alt: #1e1d1d;
 	--text-color-light: #fff;
-	--first-color: #073a10f8;
-	--first-color-second: #eef0cc;
+	--first-color: #032e1cf8;
+	--first-color-second: #efe7acd3;
 
 	/*===== Font & Typography ======*/
 	/*== .5rem = 8px, 1rem = 16px ==*/
@@ -276,7 +276,7 @@ img {
 	padding: 20px;
 }
 
-.home_data {
+.home_data_1 {
 	padding: 2rem;
 	display: flex;
 }
@@ -320,5 +320,50 @@ img {
 	border-image: none;
 	width: 320px;
 	height: auto;
-	transform: scale(1.5);
+	transform: scale(1.32);
 }
+
+.home_content_2 {
+	background-color: var(--body-color);
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 0;	
+}
+
+.home_data_2 {
+	display: inline-block;
+}
+
+.nav2_list {
+	display: flex;
+	column-gap: .5rem;
+}
+
+.list_item2{
+	display: flex;
+	background-color: var(--container-color-alt);
+	border-radius: 30px;
+}
+
+.nav2_link {
+	color: var(--text-color-alt);
+	padding: 5px 10px;
+	font-size: var(--small-font-size);
+}
+
+.arrow {
+	font-size: 1.2rem;
+}
+
+.sort {
+	background-color: var(--body-color);
+	border: solid 2px var(--container-color-alt);
+	border-radius: 30px;
+}
+
+.sort_by {
+	padding: 5px 10px;
+	color: var(--text-color-alt);
+	font-size: var(--small-font-size);
+}
+
