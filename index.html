@@ -11,35 +11,74 @@
 	</head>
 	<body>
 			<!--============ Top Most =========-->
-		<div class="bg-darkGreen">
-			<div class="flex py-1 mx-12 justify-between">
-				<div class="space-x-1 text-white text-lg text-center">
-					<i class="uil uil-phone"></i><span>020-895-1839</span>
-				</div>
-				<div class="flex space-x-2 text-lg text-white text-center">
-					<p>Get 50% off on selected items</p>
-					<span class="h-8 w-0.5 bg-white"></span>
-					<span>Shop Now</span>
-				</div>
-				<div class="flex flex-row space-x-4">
-					<div class="max-w-auto">
-						<select name="" class="bg-darkGreen text-white cursor-pointer focus:outline-none px-2">
-							<option value="Eng">Eng</option>
-							<option value="fr">Fr</option>
-							<option value="esp">Esp</option>
-						</select>
+		<header class="relative">
+			<div class="relative bg-darkGreen inset-x-0 top-0  max-h-10">
+				<div class="relative flex justify-between px-12">
+					<div class="space-x-1 text-white text-lg text-center">
+						<i class="uil uil-phone"></i><span>020-895-1839</span>
 					</div>
-					<div class='max-w-auto'>
-						<select name="loc" class="bg-darkGreen text-white cursor-pointer focus:outline-none px-1 hidden
-						md:block">
-							<option value="Accra">Accra</option>
-							<option value="London">London</option>
-							<option value="New York">New York</option>
-							<option value="Dubai">Dubai</option>
-						</select>
+					<div class="flex space-x-2 text-lg text-white text-center items-center">
+						<p>Get 50% off on selected items</p>
+						<span class="h-5 w-0.5 bg-white"></span>
+						<span>Shop Now</span>
+					</div>
+					<div class="flex flex-row space-x-4">
+						<div class="max-w-auto">
+							<select name="" class="bg-darkGreen text-white cursor-pointer focus:outline-none px-2">
+								<option value="Eng">Eng</option>
+								<option value="fr">Fr</option>
+								<option value="esp">Esp</option>
+							</select>
+						</div>
+						<div class='max-w-auto'>
+							<select name="loc" class="bg-darkGreen text-white cursor-pointer focus:outline-none px-1">
+								<option value="Accra">Accra</option>
+								<option value="London">London</option>
+								<option value="New York">New York</option>
+								<option value="Dubai">Dubai</option>
+							</select>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+
+			<nav class="relative px-12 pt-4" id="nav">
+				<!--========= Flex Container ===========-->
+				<div class="flex items-center justify-between">
+					<!--======== Logo ========-->
+					<div class="space-x-0.5 text-3xl">
+						<i class="uil uil-shopping-cart-alt text-darkGreen"></i>
+						<span class="font-semibold text-darkGreen">ShopCart</span>
+					</div>
+					<!--========= Nav Menu ========-->
+					<div class="flex flex-row justify-between space-x-4 text-center" id="menu">
+						<a href="#categories" class="text-black hover:text-gray-600 font-normal">Categories<i class="uil uil-angle-down"></i></a>
+						<a href="#Deals" class="text-black hover:text-gray-600 font-normal">Deals</a>
+						<a href="#new" class="text-black hover:text-gray-600 font-normal">What's New</a>
+						<a href="#delivery" class="text-black hover:text-gray-600 font-normal">Delivery</a>
+					</div>
+					<!--=========== Search Widget ===========-->
+					<div class="search-widget">
+						<input type="text" class="search-input" placeholder="search product" />
+						<button class="search-button">
+							<i class="uil uil-search"></i>
+						</button>
+					</div>
+					<!--============ Account & Cart ======-->
+					<div class="flex justify-between space-x-8">
+						<a href="#user"
+						   class="space-x-2 text-lg text-black text-center hover:text-gray-600 font-normal">
+							<i class="uil uil-user"></i><span>Account</span>
+						</a>
+						<a href="#cart" 
+						   class="space-x-2 text-lg text-black text-center hover:text-gray-600 font-normal">
+							<i class="uil uil-shopping-cart"></i><span>Cart</span>
+						</a>
+					</div>
+				</div>		
+			</nav>
+		</header>
+
+		<script src="./js/main.js"></script>
 	</body>
 </html>
