@@ -3,82 +3,82 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--============== UNICONS =================-->
-		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+		<link href="/your-path-to-uicons/css/uicons-fi fi-sr-settings-sliders" rel="stylesheet">
+		<!--============== REMIXICONS =================-->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 		<!--========== CSS ==============-->
 		<link rel="stylesheet" href="./css/main.css">
 		<title>ShopCart Landing page</title>
 	</head>
 	<body>
-			<!--============ Top Most =========-->
+		<!--=============== Header ==============-->
 		<header class="relative">
-			<div class="relative bg-darkGreen inset-x-0 top-0  max-h-10">
-				<div class="relative flex justify-between px-12">
-					<div class="space-x-1 text-white text-lg text-center">
-						<i class="uil uil-phone"></i><span>020-895-1839</span>
-					</div>
-					<div class="flex space-x-2 text-lg text-white text-center items-center">
-						<p>Get 50% off on selected items</p>
-						<span class="h-5 w-0.5 bg-white"></span>
-						<span>Shop Now</span>
-					</div>
-					<div class="flex flex-row space-x-4">
-						<div class="max-w-auto">
-							<select name="" class="bg-darkGreen text-white cursor-pointer focus:outline-none px-2">
-								<option value="Eng">Eng</option>
-								<option value="fr">Fr</option>
-								<option value="esp">Esp</option>
-							</select>
-						</div>
-						<div class='max-w-auto'>
-							<select name="loc" class="bg-darkGreen text-white cursor-pointer focus:outline-none px-1">
-								<option value="Accra">Accra</option>
-								<option value="London">London</option>
-								<option value="New York">New York</option>
-								<option value="Dubai">Dubai</option>
-							</select>
-						</div>
-					</div>
+			<!--======= Green Header ==========-->
+			<div class="relative flex justify-between bg-darkGreen inset-x-0 top-0 h-8 py-1 px-12 items-center">
+				<div class="space-x-1 items-center text-white text-lg hidden md:flex">
+					<i class="ri-phone-line"></i><span>020-895-1839</span>
+				</div>
+
+				<div class="flex space-x-3 items-center text-white text-lg text-center">
+					<p>
+						Get 50% off on selected items
+					</p>
+					<span class="h-7 w-0.5 bg-white"></span>
+					<p>Shop Now</p>
+				</div>
+
+				<div class="space-x-4 items-center hidden md:flex">
+					<select name="language" id="language" class="bg-darkGreen focus:outline-none text-lg text-white">
+						<option value="Eng">Eng</option>
+						<option value="Fr">Fr</option>
+						<option value="Esp">Esp</option>
+					</select>
+					<select name="location" id="location" class="bg-darkGreen focus:outline-none text-lg text-white">
+						Location
+						<option value="Accra">New York</option>
+						<option value="London">London</option>
+						<option value="Dubai">Dubai</option>
+						<option value="Accra">Accra</option>
+					</select>
 				</div>
 			</div>
 
-			<nav class="relative px-12 pt-4" id="nav">
-				<!--========= Flex Container ===========-->
-				<div class="flex items-center justify-between">
-					<!--======== Logo ========-->
-					<div class="space-x-0.5 text-3xl">
-						<i class="uil uil-shopping-cart-alt text-darkGreen"></i>
-						<span class="font-semibold text-darkGreen">ShopCart</span>
+			<!--============ Nav ==============-->
+			<nav class="flex justify-between px-12 py-2 items-center">
+				<!--============= Logo =========-->
+				<div class="flex space-x-1 cursor-pointer items-center text-darkGreen">
+					<i class="ri-shopping-cart-fill text-2xl"></i><span class="font-bold text-xl">ShopCart</span>
+				</div>
+
+				<!--============= Menu ==========-->
+				<div class="flex space-x-5 items-center">
+					<div class="flex items-center hover:text-gray-500">
+						<a href="#Categories" class="text-center items-center">Categories<i class="ri-arrow-down-s-line ml-1 text-lg"></i></a>
 					</div>
-					<!--========= Nav Menu ========-->
-					<div class="flex flex-row justify-between space-x-4 text-center" id="menu">
-						<a href="#categories" class="text-black hover:text-gray-600 font-normal">Categories<i class="uil uil-angle-down"></i></a>
-						<a href="#Deals" class="text-black hover:text-gray-600 font-normal">Deals</a>
-						<a href="#new" class="text-black hover:text-gray-600 font-normal">What's New</a>
-						<a href="#delivery" class="text-black hover:text-gray-600 font-normal">Delivery</a>
+					<a href="">Deals</a>
+					<a href="">What's New</a>
+					<a href="">Delivery</a>
+				</div>
+
+				<!--============ Search Widget =======-->
+				<div class="search-widget">
+					<input type="text" class="search-input">
+					<button class="search-button">
+						<i class="ri-search-line"></i>
+					</button>
+				</div>
+
+				<!--========== Account & Cart =========-->
+				<div class="flex">
+					<div class="flex">
+						<i class="ri-user-line"></i><span>Account</span>
 					</div>
-					<!--=========== Search Widget ===========-->
-					<div class="search-widget">
-						<input type="text" class="search-input" placeholder="search product" />
-						<button class="search-button">
-							<i class="uil uil-search"></i>
-						</button>
+					<div class="flex">
+						<i class="ri-shopping-cart-2-line"></i><span>Cart</span>
 					</div>
-					<!--============ Account & Cart ======-->
-					<div class="flex justify-between space-x-8">
-						<a href="#user"
-						   class="space-x-2 text-lg text-black text-center hover:text-gray-600 font-normal">
-							<i class="uil uil-user"></i><span>Account</span>
-						</a>
-						<a href="#cart" 
-						   class="space-x-2 text-lg text-black text-center hover:text-gray-600 font-normal">
-							<i class="uil uil-shopping-cart"></i><span>Cart</span>
-						</a>
-					</div>
-				</div>		
+				</div>
 			</nav>
 		</header>
-
 		<script src="./js/main.js"></script>
 	</body>
 </html>
